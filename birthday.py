@@ -31,3 +31,31 @@ Example Session
   And the day? 11
   Eric, you are a fall baby of the stone age.
 """
+name = input("What is your name?     ")
+birthmonth = input("What month were you born?    ")
+birthyear = input("What year were you born?   ")
+birthday = input("What day were you born on? (number)   ")
+
+if birthmonth == "October" and int(birthday) == 31:
+      print("You were born on Halloween!")
+
+if birthmonth == "September" and int(birthday) == 17:
+    print("Happy birthday!")
+
+if birthmonth == ["June", "July", "August"]:
+    if birthyear > 2010:
+        print(name + ", you are a summer baby of the last decade")
+    if birthyear 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
