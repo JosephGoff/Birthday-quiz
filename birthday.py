@@ -1,8 +1,8 @@
 """
 birthday.py
 Author: Joseph Goff
-Credit: None
-Assignment:
+Credit: Morgan Gardner
+Assignment: Birthday Problem
 
 Your program will ask the user the following questions, in this order:
 
@@ -31,27 +31,69 @@ Example Session
   And the day? 11
   Eric, you are a fall baby of the stone age.
 """
+from datetime import datetime
+from calendar import month_name
+todaymonth = datetime.today().month
+todaydate = datetime.today().day
+
 name = input("What is your name?     ")
 birthmonth = input("What month were you born?    ")
-birthyear = input("What year were you born?   ")
-birthday = input("What day were you born on? (number)   ")
+birthyear = int(input("What year were you born?   "))
+birthday = int(input("What day were you born on? (number)   "))
 
-if birthmonth == "October" and int(birthday) == 31:
-      print("You were born on Halloween!")
+months = ["" "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ""]
+month = months[todaymonth]
 
-if birthmonth == "September" and int(birthday) == 17:
+
+if birthmonth=="October" and birthday==31:
+    print("You were born on Halloween!")
+elif birthmonth==month and birthday==todaydate:
     print("Happy birthday!")
-
-if birthmonth == ["June", "July", "August"]:
-    if birthyear > 2010:
-        print(name + ", you are a summer baby of the last decade")
-    if birthyear 
     
+elif birthmonth in ["March", "April", "May"] and birthyear>=2010 and birthyear<= 2018:
+    print(str(name + ", you are a spring baby of the two thousand tens."))
+elif birthmonth in ["June", "July", "August"] and birthyear>=2010 and birthyear<= 2018:
+    print(str(name +", you are a summer baby of the two thousand tens."))
+elif birthmonth in ["September", "October", "November"]  and birthyear>=2010 and birthyear<= 2018:
+    print(str(name + ", you are a fall baby of the two thousand tens."))
+elif birthmonth in ["December", "January", "February"] and birthyear>=2010 and birthyear<= 2018:
+    print(str(name + ", you are a winter baby of the two thousand tens."))
     
+elif birthmonth in ["March", "April", "May"] and birthyear>=2000: 
+    print(str(name + ", you are a spring baby of the two thousands."))
+elif birthmonth in ["June", "July", "August"] and birthyear>=2000:
+    print(str(name +", you are a summer baby of the two thousands."))
+elif birthmonth in ["September", "October", "November"]  and birthyear>=2000:
+    print(str(name + ", you are a fall baby of the two thousands."))
+elif birthmonth in ["December", "January", "February"] and birthyear>=2000:
+    print(str(name + ", you are a winter baby of the two thousands."))
     
+elif birthmonth in ["March", "April", "May"] and birthyear>=1990 and birthyear<= 2000:
+    print(str(name + ", you are a spring baby of the nineties."))
+elif birthmonth in ["June", "July", "August"] and birthyear>=1990 and birthyear<=2000:
+    print(str(name + ", you are a summer baby of the nineties."))
+elif birthmonth in ["September", "October", "November"]  and birthyear>=1990 and birthyear<=2000:
+    print(str(name + ", you are a fall baby of the nineties."))
+elif birthmonth in ["December", "January", "February"] and birthyear>=1990 and birthyear<= 2000:
+    print(str(name + ", you are a winter baby of the nineties."))
     
+elif birthmonth in ["March", "April", "May"] and birthyear>=1980 and birthyear<= 1990:
+    print(str(name + ", you are a spring baby of the eighties."))
+elif birthmonth in ["June", "July", "August"] and birthyear>=1980 and birthyear<=1990:
+    print(str(name + ", you are a summer baby of the eighties."))    
+elif birthmonth in ["September", "October", "November"]  and birthyear>=1980 and birthyear<=1990:
+    print(str(name + ", you are a fall baby of the eighties."))
+elif birthmonth in ["December", "January", "February"] and birthyear>=1980 and birthyear<= 1990:
+    print(str(name + ", you are a winter baby of the eighties."))
     
-    
+elif birthmonth in ["March", "April", "May"] and birthyear<=1980: 
+    print(str(name + ", you are a spring baby of the Stone Age."))
+elif birthmonth in ["June", "July", "August"] and birthyear<=1980:
+    print(str(name +", you are a summer baby of the Stone Age."))
+elif birthmonth in ["September", "October", "November"] and birthyear<=1980:
+    print(str(name + ", you are a fall baby of the Stone Age."))
+elif birthmonth in ["December", "January", "February"]  and birthyear<=1980:
+    print(str(name + ", you are a winter baby of the Stone Age."))
     
     
     
