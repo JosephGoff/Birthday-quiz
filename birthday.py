@@ -39,7 +39,7 @@ todaydate = datetime.today().day
 name = input("Hello, what is your name?")
 birthmonth = input("Hi " + name + ", what was the name of the month you were born in?")
 birthyear = int(input("And what year were you born in, " + name + "?"))
-birthday = int(input("  And the day?"))
+birthday = int(input("And the day?"))
 
 months = ["" "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ""]
 month = months[todaymonth]
