@@ -41,7 +41,7 @@ birthmonth = input("Hi " + name + ", what was the name of the month you were bor
 birthyear = int(input("And what year were you born in, " + name + "? "))
 birthday = int(input("And the day? "))
 
-months = ["" "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ""]
+months = ["", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ""]
 month = months[todaymonth]
 
 
