@@ -51,13 +51,13 @@ elif birthmonth==month and birthday==todaydate:
     print("Happy birthday!")
     
 elif birthmonth in ["March", "April", "May"] and birthyear>=2010 and birthyear<= 2018:
-    print(str(name + ", you are a spring baby of the two thousand tens."))
+    print(str(name + ", you are a spring baby of the two thousands."))
 elif birthmonth in ["June", "July", "August"] and birthyear>=2010 and birthyear<= 2018:
-    print(str(name +", you are a summer baby of the two thousand tens."))
+    print(str(name +", you are a summer baby of the two thousands."))
 elif birthmonth in ["September", "October", "November"]  and birthyear>=2010 and birthyear<= 2018:
-    print(str(name + ", you are a fall baby of the two thousand tens."))
+    print(str(name + ", you are a fall baby of the two thousands."))
 elif birthmonth in ["December", "January", "February"] and birthyear>=2010 and birthyear<= 2018:
-    print(str(name + ", you are a winter baby of the two thousand tens."))
+    print(str(name + ", you are a winter baby of the two thousands."))
     
 elif birthmonth in ["March", "April", "May"] and birthyear>=2000: 
     print(str(name + ", you are a spring baby of the two thousands."))
